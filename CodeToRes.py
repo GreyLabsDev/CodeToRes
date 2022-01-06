@@ -20,7 +20,7 @@ class bcolors:
     UNDERLINE = '\033[4m'
     
 def printColored(color, text):
-    print(color + text + color)
+    print(color + text + bcolors.ENDC)
 
 def showHelp():
     printColored(bcolors.HEADER, "\nScript for generating string resources from hardcoded strings in *.kt source files\nTo generate resource files use command 'codeToRes <path_to_kotlin_source_directory> <path_to_kotlin_layouts_directory>'")
